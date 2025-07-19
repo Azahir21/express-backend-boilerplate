@@ -1,0 +1,29 @@
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --only=production
+
+# Install all dependencies (including dev dependencies)
+# RUN npm ci
+
+# Copy source code
+COPY . .
+
+# Generate Prisma client and build the application
+RUN npx prisma generate && \
+	npm run build
+
+# Expose port
+EXPOSE 8080
+
+# Start the application in production mode
+CMD ["npm", "start"]
+
+# Start the application in development mode
+# CMD ["npm", "run", "dev"]
