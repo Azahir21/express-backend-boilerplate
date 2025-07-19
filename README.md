@@ -1,5 +1,9 @@
 # Express Backend Boilerplate
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Azahir21/express-backend-boilerplate)
+
+> 💡 **Have questions about this repo?** Click the badge above to ask the DeepWiki AI assistant anything about this codebase. It has analyzed the entire repository and can answer specific questions about how the code works!
+
 A **beginner-friendly**, production-ready RESTful API boilerplate using Express.js, TypeScript, Prisma ORM, JWT authentication, and Swagger documentation.
 
 > 🎯 **Perfect for newcomers** who want to learn modern Node.js backend development with best practices built-in!
